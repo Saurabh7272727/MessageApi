@@ -8,6 +8,9 @@ app.get('/', (req, res) => {
     res.json({ message: "hello world" })
 });
 
+app.post('/', (req, res) => {
+    res.json({ message: "post section" })
+})
 
 app.listen(PORT, (req, res) => {
     console.log(`server listening on ${PORT}`)
