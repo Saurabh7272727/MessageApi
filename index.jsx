@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.json({ message: "hello world" })
 });
 
-app.post('/', (req, res) => {
+app.post('/post', (req, res) => {
     res.json({ message: "post section" })
 })
 
