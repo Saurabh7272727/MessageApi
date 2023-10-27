@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     res.json({ message: "hello world" })
 });
 
-app.post('/post', async (req, res) => {
+app.get('/post', async (req, res) => {
     const { name, number } = req.body;
 
     try {
