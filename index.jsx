@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
+
+
 const cors = require('cors');
 const mongoose = require('mongoose');
-
+app.use(express.urlencoded({ extended: true }));
 mongoose.connect('mongodb+srv://asuslap4545:Ymdw4d7jyihxeD4k@saurabhdatabase.ffjmaxz.mongodb.net/Message_wala').then(() => {
     console.log('Database connection established');
 }).catch((err) => {
